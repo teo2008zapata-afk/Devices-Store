@@ -1,0 +1,247 @@
+body{
+    background-color: rgb(47, 47, 47);
+    padding-top: 100px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 35px;
+    height: 60px;
+    padding-top: 20px;
+    display: flex;
+    background-color: rgb(29, 46, 102);
+    z-index: 10;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -7px;
+    margin-left: 5px;
+}
+
+form{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.logo{
+   margin-top: -18px;
+   width: 160px;
+   height: 110px;
+   margin-left: -10px;
+}
+
+.nav-links{
+    display: flex;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: -7px;
+}
+
+.inicio{
+    font-size: 20px;
+}
+
+.registro{
+    font-size: 20px;
+}
+img{
+    width: 170px;
+    height: 100px;
+}
+table{
+    width: 80%;
+    text-align: center;
+}
+footer{
+    background-color: rgb(29, 46, 102);
+    height: 80px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    margin-top: 40px;
+}
+
+text{
+    padding-top: 25px;
+    padding-left: 70px;
+}
+footer a{
+    padding-top: 25px;
+    color: black;
+    text-decoration: none;
+    padding-left: 40px;
+}
+th{
+    background-color: rgb(29, 46, 102);
+}
+td{
+    background-color: rgb(131, 171, 161);
+}
+table{
+    border-radius: 10px;
+    border-color: black;
+}
+.carousel{
+    width: 90%;
+    max-width: 900px;
+    min-height: 420px;
+    position: relative;
+    margin-left: 200px;
+    margin-bottom: 40px;
+    border-radius: 18px;
+}
+.carousel-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    display: none;
+}
+.carousel-slide.active{
+    opacity: 1;
+    display: block;
+}
+.carousel-slide img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.carousel-caption{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.52);
+    color: white;
+    padding: 16px 18px;
+    border-radius: 12px;
+}
+.carousel-caption h3{
+    margin: 0 0 4px;
+    font-size: 1.3rem;
+}
+.carousel-caption p{
+    margin: 0;
+    font-size: 0.95rem;
+}
+.carousel-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 32px;
+    padding: 12px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+}
+.carousel-button:hover{
+    background: rgba(0, 0, 0, 0.65);
+}
+.carousel-button.prev{
+    left: 14px;
+}
+.carousel-button.next{
+    right: 14px;
+}
+.carousel-dots{
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+.carousel-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.carousel-dot.active{
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.15);
+}
+.square{
+    background-color: rgb(225, 247, 242);
+    padding-bottom: 30px;
+    margin-left: 480px;
+    margin-right: 410px;
+    border-radius: 10px;
+}
+.sobre-nosotros{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+    background-color: rgb(225, 247, 242);
+    border-radius: 20px;
+}
+h4{
+    padding-left: 30px;
+
+}
+
+.sobre-nosotros h2{
+    margin-top: 20px;
+
+}
+
+.sobre-nosotros ul{
+    margin-left: 25px;
+}
+label{
+    font-size: 20px;
+    text-align: left;
+}
+h3{
+    padding-left: 580px;
+    font-size: 30px;
+}
+.rellenar{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+}
+.boton{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 405px;
+    background-color: rgb(148, 224, 189);
+    height: 40px;
+}
+.mensaje{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 100px;
+}

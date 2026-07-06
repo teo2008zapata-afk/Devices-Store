@@ -1,247 +1,358 @@
 body{
-    background-color: rgb(223, 222, 222);
+    margin: 0;
     padding-top: 100px;
+    background: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
+
+/* ---------------- NAVBAR ---------------- */
 
 nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    font-size: 35px;
-    height: 60px;
-    padding-top: 20px;
+    height: 80px;
     display: flex;
-    background-color: rgb(148, 224, 189);
-    z-index: 10;
+    align-items: center;
+    background: #1f8f63;
+    box-shadow: 0 3px 12px rgba(0,0,0,.2);
+    z-index: 1000;
 }
 
 nav a{
-    color: black;
+    color: white;
     text-decoration: none;
-    padding-left: 50px;
+    padding-left: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: #d8ffe9;
 }
 
 .logo{
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    margin-top: -7px;
-    margin-left: 5px;
-}
-
-form{
-    padding-top: 30px;
-    padding-left: 20px;
-}
-
-.logo{
-   margin-top: -18px;
-   width: 160px;
-   height: 110px;
-   margin-left: -10px;
+    width: 150px;
+    height: 100px;
+    margin-left: -10px;
 }
 
 .nav-links{
     display: flex;
-    font-size: 30px;
-    margin: 10px;
-    margin-left: -7px;
+    align-items: center;
+    margin-left: 15px;
 }
 
-.inicio{
-    font-size: 20px;
-}
-
+.inicio,
 .registro{
     font-size: 20px;
 }
+
+/* ---------------- FORMULARIOS ---------------- */
+
+form{
+    padding: 30px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rellenar{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.mensaje{
+    width: 100%;
+    max-width: 400px;
+    height: 120px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.boton{
+    width: 100%;
+    max-width: 405px;
+    height: 45px;
+    background: #1f8f63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.boton:hover{
+    background: #166b49;
+}
+
+/* ---------------- IMÁGENES ---------------- */
+
 img{
     width: 170px;
     height: 100px;
-}
-table{
-    width: 80%;
-    text-align: center;
-}
-footer{
-    background-color: rgb(148, 224, 189);
-    height: 80px;
-    width: 100%;
-    font-size: 20px;
-    display: flex;
-    margin-top: 40px;
+    border-radius: 8px;
 }
 
-text{
-    padding-top: 25px;
-    padding-left: 70px;
-}
-footer a{
-    padding-top: 25px;
-    color: black;
-    text-decoration: none;
-    padding-left: 40px;
-}
-th{
-    background-color: rgb(148, 224, 189);
-}
-td{
-    background-color: rgb(225, 247, 242);
-}
+/* ---------------- TABLAS ---------------- */
+
 table{
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    overflow: hidden;
     border-radius: 10px;
-    border-color: black;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
 }
+
+th{
+    background: #1f8f63;
+    color: white;
+    padding: 14px;
+}
+
+td{
+    background: #ffffff;
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+tr:hover td{
+    background: #f2fff8;
+}
+
+/* ---------------- CARRUSEL ---------------- */
+
 .carousel{
     width: 90%;
-    max-width: 900px;
-    min-height: 420px;
+    max-width: 1000px;
+    min-height: 450px;
+    margin: 30px auto;
     position: relative;
-    margin-left: 200px;
-    margin-bottom: 40px;
     border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.2);
 }
+
 .carousel-slide{
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.6s ease;
     display: none;
+    transition: opacity .6s;
 }
+
 .carousel-slide.active{
     opacity: 1;
     display: block;
 }
+
 .carousel-slide img{
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
 }
+
 .carousel-caption{
     position: absolute;
-    bottom: 20px;
     left: 20px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.52);
-    color: white;
-    padding: 16px 18px;
+    bottom: 20px;
+    padding: 18px;
     border-radius: 12px;
+    background: rgba(0,0,0,.55);
+    color: white;
 }
+
 .carousel-caption h3{
-    margin: 0 0 4px;
-    font-size: 1.3rem;
-}
-.carousel-caption p{
     margin: 0;
-    font-size: 0.95rem;
+    padding: 0;
+    font-size: 28px;
+    text-align: left;
 }
+
+.carousel-caption p{
+    margin-top: 8px;
+}
+
 .carousel-button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.4);
     border: none;
-    color: white;
-    font-size: 32px;
-    padding: 12px 14px;
-    cursor: pointer;
     border-radius: 50%;
-    z-index: 2;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background: rgba(0,0,0,.45);
+    font-size: 28px;
+    transition: .3s;
 }
+
 .carousel-button:hover{
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0,0,0,.75);
 }
+
 .carousel-button.prev{
-    left: 14px;
+    left: 15px;
 }
+
 .carousel-button.next{
-    right: 14px;
+    right: 15px;
 }
+
 .carousel-dots{
     position: absolute;
-    bottom: 14px;
+    bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
-    z-index: 2;
 }
+
 .carousel-dot{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.65);
-    border: 1px solid rgba(255, 255, 255, 0.9);
+    background: rgba(255,255,255,.6);
     cursor: pointer;
-    transition: transform 0.2s ease;
 }
-.carousel-dot.active{
-    background: rgba(255, 255, 255, 1);
-    transform: scale(1.15);
-}
-.square{
-    background-color: rgb(225, 247, 242);
-    padding-bottom: 30px;
-    margin-left: 480px;
-    margin-right: 410px;
-    border-radius: 10px;
-}
-.sobre-nosotros{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 20px;
-    text-align: justify;
-    line-height: 1.8;
-    background-color: rgb(225, 247, 242);
-    border-radius: 20px;
-}
-h4{
-    padding-left: 30px;
 
+.carousel-dot.active{
+    background: white;
+}
+
+/* ---------------- TARJETAS ---------------- */
+
+.square{
+    background: white;
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.sobre-nosotros{
+    background: white;
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    line-height: 1.8;
+    text-align: justify;
 }
 
 .sobre-nosotros h2{
-    margin-top: 20px;
-
+    margin-top: 0;
 }
 
 .sobre-nosotros ul{
-    margin-left: 25px;
+    margin-left: 20px;
 }
-label{
-    font-size: 20px;
-    text-align: left;
-}
+
 h3{
-    padding-left: 580px;
-    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    font-size: 32px;
+    color: #1f8f63;
 }
-.rellenar{
-    font-size: 20px;
-    border-radius: 5px;
-    width: 400px;
-    height: 30px;
+
+h4{
+    padding-left: 0;
+    color: #1f8f63;
 }
-.boton{
-    font-size: 20px;
-    border-radius: 5px;
-    width: 405px;
-    background-color: rgb(148, 224, 189);
-    height: 40px;
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+    width: 100%;
+    margin-top: 50px;
+    background: #1f8f63;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    box-sizing: border-box;
 }
-.mensaje{
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    border-radius: 5px;
-    width: 400px;
-    height: 100px;
+
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer a:hover{
+    color: #d8ffe9;
+}
+
+text{
+    padding: 0;
+    color: white;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:768px){
+
+    nav{
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    nav a{
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .carousel{
+        min-height: 250px;
+    }
+
+    .square,
+    .sobre-nosotros{
+        width: 95%;
+    }
+
+    table{
+        width: 98%;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
 }

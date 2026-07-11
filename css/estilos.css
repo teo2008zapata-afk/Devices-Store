@@ -16,13 +16,13 @@ nav{
     height: 80px;
     display: flex;
     align-items: center;
-    background: #1f8f63;
+    background: #ebebeb;
     box-shadow: 0 3px 12px rgba(0,0,0,.2);
     z-index: 1000;
 }
 
 nav a{
-    color: white;
+    color: rgb(43, 43, 43);
     text-decoration: none;
     padding-left: 35px;
     font-size: 20px;
@@ -31,7 +31,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #d8ffe9;
+    color: #494d66;
 }
 
 .logo{
@@ -93,8 +93,8 @@ label{
     width: 100%;
     max-width: 405px;
     height: 45px;
-    background: #1f8f63;
-    color: white;
+    background: #494d66;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 8px;
     font-size: 18px;
@@ -103,7 +103,7 @@ label{
 }
 
 .boton:hover{
-    background: #166b49;
+    background: #7a84c9;
 }
 
 /* ---------------- IMÁGENES ---------------- */
@@ -127,7 +127,7 @@ table{
 }
 
 th{
-    background: #1f8f63;
+    background: #494d66;
     color: white;
     padding: 14px;
 }
@@ -139,7 +139,7 @@ td{
 }
 
 tr:hover td{
-    background: #f2fff8;
+    background: #ededf1;
 }
 
 /* ---------------- CARRUSEL ---------------- */
@@ -191,6 +191,7 @@ tr:hover td{
     padding: 0;
     font-size: 28px;
     text-align: left;
+    color: #ffffff;
 }
 
 .carousel-caption p{
@@ -279,12 +280,12 @@ h3{
     text-align: center;
     padding: 0;
     font-size: 32px;
-    color: #1f8f63;
+    color: #000000;
 }
 
 h4{
     padding-left: 0;
-    color: #1f8f63;
+    color: #000000;
 }
 
 /* ---------------- FOOTER ---------------- */
@@ -292,7 +293,7 @@ h4{
 footer{
     width: 100%;
     margin-top: 50px;
-    background: #1f8f63;
+    background: #ebebeb;
     color: white;
     display: flex;
     justify-content: center;
@@ -303,18 +304,18 @@ footer{
 }
 
 footer a{
-    color: white;
+    color: rgb(27, 27, 27);
     text-decoration: none;
     transition: .3s;
 }
 
 footer a:hover{
-    color: #d8ffe9;
+    color: #494d66;
 }
 
 text{
     padding: 0;
-    color: white;
+    color: #1a1a1a;
 }
 
 /* ---------------- RESPONSIVE ---------------- */
